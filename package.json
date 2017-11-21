@@ -1,0 +1,23 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshumehta1114/url-shortener-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshumehta1114/url-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/himanshumehta1114/url-shortener-microservice#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  }
+}

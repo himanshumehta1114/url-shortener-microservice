@@ -39,7 +39,17 @@ app.get('/new/:url', (req,res) => {
     })
 });
 
-
+app.get('/:urlID',(req,res) => {
+    urlDir.findOne({shortLink : req.params.urlID}).then((doc) => {
+      if(!doc){
+        return res.status(400).send();
+      }else{
+        res.redirect('https://' + doc.url);
+      }
+    }).catch((e) => {
+      res.status(400).send();
+    });
+});
 
 app.listen(port, () => {
   console.log(`Server is up on port : ${port}`);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>TimeStamp microservice</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <img src="image.jpg" alt="Himanshu Mehta" width='150px' height='150px'>
+    <p style="font-size: 25px">
+      <a href="mailto:himanshumehta1114@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a href="https://github.com/himanshumehta1114" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://linkedin.com/in/himanshumehta1114" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://codepen.io/himanshumehta1114" target="_blank"><i class="fa fa-codepen"></i></a>
+      <a href="https://freecodecamp.org/himanshumehta1114" target="_blank"><i class="fa fa-fire"></i></a>
+    </p>
+    <h1>FreeCodeCamp API Basejump: URL Shortener Microservice</h1>
+  <blockquote>
+    User stories:
+     <ul>1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</ul>
+     <ul>2) When I visit that shortened URL, it will redirect me to my original link.</ul>
+  </blockquote>
+  <h3>Example Creation Usage: </h3>
+  <code>https://shortUrl-himanshu.herokuapp.com/new/www.google.com</code>
+
+  <h3>Output Example:</h3>
+  <code>
+        {
+          __v: 0,
+          url: "www.google.com",
+          _id: "5a169303bc83ae4223ba4af3",
+          shortLink: 2330
+          }
+    </code>
+
+  <h3>Example Usage: </h3>
+  <code>https://shortUrl-himanshu.herokuapp.com/2330</code>
+  <br>
+
+  <h3>Will redirect to: </h3>
+  <code>https://www.google.com</code>
+</div>
+</body>
+</html>

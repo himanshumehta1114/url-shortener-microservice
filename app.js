@@ -19,9 +19,7 @@ var urlDir = mongoose.model('urlDirectory', {
     }
 });
 
-app.get('/', (req,res) => {
-  res.send('Welcome to home page');
-});
+app.use(express.static(__dirname + '/public'));
 
 app.get('/new/:url', (req,res) => {
     var shortID = Math.floor(Math.random() * 10000);
